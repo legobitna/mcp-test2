@@ -1,0 +1,117 @@
+body {
+  background: #fff;
+  margin: 0;
+  font-family: 'Roboto', 'Comfortaa', Arial, sans-serif;
+}
+.status-bar {
+  width: 375px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 15px;
+  color: #000;
+  box-sizing: border-box;
+}
+.status-icons {
+  display: flex;
+  gap: 8px;
+}
+.icon {
+  display: inline-block;
+  width: 18px;
+  height: 12px;
+  background: #000;
+  opacity: 0.8;
+  border-radius: 2px;
+}
+.icon.wifi { width: 15px; height: 11px; background: #000; opacity: 0.8; border-radius: 50% 50% 0 0/60% 60% 0 0; }
+.icon.battery { width: 22px; height: 11px; background: #000; opacity: 0.8; border-radius: 2px; }
+.icon.cell { width: 17px; height: 10px; background: #000; opacity: 0.8; border-radius: 2px; }
+.register-container {
+  width: 375px;
+  margin: 0 auto;
+  padding: 40px 16px 0 16px;
+  box-sizing: border-box;
+}
+.register-title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #000;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.input-group {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 6px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  color: #000;
+  background: transparent;
+}
+.input-group input::placeholder {
+  color: #000;
+  opacity: 0.5;
+}
+.register-btn {
+  height: 52px;
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  border: 1px solid #000;
+  border-radius: 6px;
+  letter-spacing: 0.52px;
+  cursor: pointer;
+}
+
+/* 다크모드 스타일 */
+body.dark {
+  background: #181818;
+  color: #fff;
+}
+body.dark .status-bar {
+  background: #181818;
+  color: #fff;
+}
+body.dark .icon {
+  background: #fff;
+  opacity: 0.8;
+}
+body.dark .register-container {
+  background: #181818;
+}
+body.dark .register-title {
+  color: #fff;
+}
+body.dark .input-group {
+  background: #232323;
+  border: 1px solid #444;
+}
+body.dark .input-group input {
+  color: #fff;
+}
+body.dark .input-group input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+body.dark .register-btn {
+  background: #fff;
+  color: #181818;
+  border: 1px solid #fff;
+} 
